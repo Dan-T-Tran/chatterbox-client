@@ -18,6 +18,10 @@
         }
         search += 'username=' + (prompt('What is your name?') || 'anonymous');
         window.location.search = search;
+        //Assumptions:
+        //  Appending username to end of url
+        //    At the end of url... username=asvkdbfb
+        //  Maybe pull the end of the url to get username?
       }
     </script>
   </head>
@@ -28,7 +32,10 @@
       <div id="rooms">
         Room:
         <select></select>
-        <button>Add Room</button>
+        <div>
+          <input type="text" name="newroom" id="newroom"/>
+          <button>Add Room</button>
+        </div>
       </div>
       <form action="#" id="send" method="post">
         <input type="text" name="message" id="message"/>

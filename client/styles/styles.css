@@ -88,3 +88,12 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+.roomname{
+    font-size: 15px;
+    text-align: right;
+}
+.messageBox {
+    /* background-color: red;
+    height: 500px;
+    width: 500px; */
+}
